@@ -1,0 +1,20 @@
+{
+  "name": "teknologika.com",
+  "interface": {
+    "displayName": "teknologika.com"
+  },
+  "plugins": [
+    {
+      "name": "capital-cities",
+      "source": {
+        "source": "local",
+        "path": "./plugins/capital-cities"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

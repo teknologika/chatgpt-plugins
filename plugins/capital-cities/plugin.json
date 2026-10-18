@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "capital-cities",
+  "version": "0.1.0",
+  "description": "Practise world capitals with hints, scoring, and a short review round.",
+  "author": {
+    "name": "teknologika.com"
+  },
+  "license": "LicenseRef-Teknologika-Use-and-Non-Commercialisation-1.0",
+  "keywords": [
+    "geography",
+    "quiz",
+    "education"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Capital Cities",
+        "shortDescription": "Practise world capitals",
+        "longDescription": "A conversational geography quiz from teknologika.com. Answer one question at a time, ask for hints, track your score, and revisit missed capitals. Includes a small curated question bank. No external service or account connection is required.",
+        "developerName": "teknologika.com",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": "Start a five-question Capital Cities quiz.",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg"
+      },
+      "publication": {
+        "release_notes": "Initial skills-only proof of concept with a curated question bank, hints, scoring, and review."
+      }
+    }
+  }
+}
