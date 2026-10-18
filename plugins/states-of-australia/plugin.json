@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "states-of-australia",
+  "version": "0.1.0",
+  "description": "Explore an Australian state using a local MCP tool.",
+  "author": {
+    "name": "teknologika.com"
+  },
+  "license": "LicenseRef-Teknologika-Use-and-Non-Commercialisation-1.0",
+  "keywords": [
+    "australia",
+    "states",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "States of Australia",
+        "shortDescription": "Test a local MCP tool",
+        "longDescription": "Choose an Australian state. A local MCP server selects its capital, a landmark or a fact and returns an execution ID. Requires Node.js 20+, npm and a desktop host supporting local MCP processes.",
+        "developerName": "teknologika.com",
+        "category": "Productivity",
+        "capabilities": [
+          "Read"
+        ],
+        "defaultPrompt": "Use States of Australia. Ask me for a state.",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg"
+      },
+      "publication": {
+        "release_notes": "Initial local TypeScript MCP test launched through npx."
+      }
+    }
+  }
+}
