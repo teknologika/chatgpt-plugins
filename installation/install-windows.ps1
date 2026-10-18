@@ -1,7 +1,7 @@
 # Register the marketplace only; customers choose plugins separately.
 & {
     $ErrorActionPreference = 'Stop'
-    $marketplace = 'teknologika.com'
+    $marketplace = 'teknologika'
     $repository = 'https://github.com/teknologika/chatgpt-plugins.git'
     try {
         if ($env:OS -ne 'Windows_NT') {

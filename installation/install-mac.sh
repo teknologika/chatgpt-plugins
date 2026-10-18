@@ -2,7 +2,7 @@
 # Register the marketplace only; customers choose plugins separately.
 set -euo pipefail
 
-marketplace='teknologika.com'
+marketplace='teknologika'
 repository='https://github.com/teknologika/chatgpt-plugins.git'
 
 if [ "$(uname -s)" != Darwin ]; then

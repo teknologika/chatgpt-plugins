@@ -29,7 +29,7 @@ Download commands require these files to be published on `main`; they do not wor
 ## Remove the marketplace
 
 ```sh
-codex plugin marketplace remove teknologika.com
+codex plugin marketplace remove teknologika
 ```
 
 This unregisters the source; it does not promise to uninstall previously installed plugins.

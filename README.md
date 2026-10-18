@@ -15,7 +15,7 @@ codex plugin marketplace add https://github.com/teknologika/chatgpt-plugins.git 
 Then install Capital Cities:
 
 ```sh
-codex plugin add capital-cities@teknologika.com
+codex plugin add capital-cities@teknologika
 ```
 
 Start a new chat and ask: **Use Capital Cities to start a five-question quiz.**
