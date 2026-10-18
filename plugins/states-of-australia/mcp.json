@@ -7,7 +7,7 @@
       "args": [
         "--yes",
         "--package",
-        "${PLUGIN_ROOT}/server/teknologika-states-of-australia-mcp-0.1.0.tgz",
+        "https://raw.githubusercontent.com/teknologika/chatgpt-plugins/528328f/plugins/states-of-australia/server/teknologika-states-of-australia-mcp-0.1.0.tgz",
         "states-of-australia-mcp"
       ]
     }

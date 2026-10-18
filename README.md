@@ -10,7 +10,7 @@ A simple greeting plugin to test installation. After registering the marketplace
 
 ## States of Australia
 
-A separate local MCP test. Requires Node.js 20+, npm/npx, and a desktop host with local stdio MCP support. First launch downloads dependencies. The compiled server is bundled with the plugin; no npm registry release is required.
+A separate local MCP test. Requires Node.js 20+, npm/npx, and a desktop host with local stdio MCP support. First launch downloads dependencies. The compiled server is bundled with the plugin; npx fetches the same archive from a commit-pinned public URL to avoid client-specific path expansion. No npm registry release is required.
 
 ```sh
 codex plugin marketplace upgrade teknologika

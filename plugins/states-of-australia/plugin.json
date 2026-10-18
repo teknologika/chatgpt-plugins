@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "states-of-australia",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Explore an Australian state using a local MCP tool.",
   "author": {
     "name": "teknologika.com"
@@ -28,7 +28,7 @@
         "composerIcon": "./assets/icon.svg"
       },
       "publication": {
-        "release_notes": "Initial local TypeScript MCP test launched through npx."
+        "release_notes": "Fix npx startup using a commit-pinned archive URL instead of an unresolved plugin-root variable. Server version remains 0.1.0."
       }
     }
   }
