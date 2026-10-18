@@ -25,8 +25,8 @@
         Write-Host 'Add our ChatGPT plugin marketplace?'
         Write-Host "Source: $repository (main)"
         Write-Host 'This registers a plugin catalog. It does not install any plugins.'
-        $reply = Read-Host 'Continue? [y/N]'
-        if ($reply -notmatch '^(?i:y|yes)$') {
+        $reply = Read-Host 'Continue? [Y/n]'
+        if ($reply -ne '' -and $reply -notmatch '^(?i:y|yes)$') {
             Write-Host 'Cancelled. No changes were made.'
             return
         }

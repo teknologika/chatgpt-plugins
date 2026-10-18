@@ -26,13 +26,13 @@ if printf '%s\n' "$sources" | awk -v name="$marketplace" '$1 == name { found=1 }
   exit 0
 fi
 printf '%s\n' 'Add our ChatGPT plugin marketplace?' "Source: $repository (main)" 'This registers a plugin catalog. It does not install any plugins.'
-printf '%s' 'Continue? [y/N] '
+printf '%s' 'Continue? [Y/n] '
 reply=''
 if ! read -r reply; then
   printf '\n%s\n' 'Cancelled. No changes were made.'
   exit 0
 fi
-case "$reply" in y|Y|yes|YES|Yes) ;; *) printf '%s\n' 'Cancelled. No changes were made.'; exit 0 ;; esac
+case "$reply" in ""|y|Y|yes|YES|Yes) ;; *) printf '%s\n' 'Cancelled. No changes were made.'; exit 0 ;; esac
 if ! codex plugin marketplace add "$repository" --ref main; then
   printf '%s\n' 'Registration failed. Check your internet connection and that the repository has been published, then try again.' >&2
   exit 1
