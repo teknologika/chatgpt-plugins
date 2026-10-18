@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "nonsense-machine": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "--yes",
+        "--package",
+        "https://raw.githubusercontent.com/teknologika/chatgpt-plugins/4578317cf813cf84d23037da1acc68205bd2f263/plugins/nonsense-machine/server/teknologika-nonsense-machine-mcp-0.1.0.tgz",
+        "nonsense-machine-mcp"
+      ]
+    }
+  }
+}

@@ -21,6 +21,10 @@ Start a fresh chat and ask **Use States of Australia**. Choose NSW for a capital
 
 This tests local MCP execution, not cloud/web availability. Production can replace the local server with a PHP MCP endpoint in WordPress while preserving the tool contract. No WordPress changes are included.
 
+## Nonsense Machine
+
+A local MCP test using unpredictable server-generated results instead of known facts. Install with `codex plugin add nonsense-machine@teknologika` after refreshing the marketplace. Start a fresh chat and ask **Use Nonsense Machine with the word teapot.** The skill must generate and then verify a result through two MCP calls. Receipts are process-local and expire on server restart or eviction. Requires Node.js 20+ and npm/npx.
+
 ## Installation
 
 Requires a supported client with the `codex` command available. Once this repository is published on `main`, register the marketplace once:

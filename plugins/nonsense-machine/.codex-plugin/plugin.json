@@ -1,0 +1,23 @@
+{
+  "name": "nonsense-machine",
+  "version": "0.1.0",
+  "description": "Generate unpredictable nonsense and verify its server receipt.",
+  "author": {
+    "name": "teknologika.com"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Nonsense Machine",
+    "shortDescription": "Fresh nonsense, real MCP calls",
+    "longDescription": "Give the local MCP server any word. It generates a fresh nonsense verdict, random token and receipt, then verifies that receipt. Requires Node.js 20+ and npm/npx in a desktop host with local MCP support.",
+    "developerName": "teknologika.com",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": "Use Nonsense Machine with the word teapot. Generate and verify the result.",
+    "logo": "./assets/icon.svg",
+    "composerIcon": "./assets/icon.svg"
+  },
+  "mcpServers": "./.mcp.json"
+}
