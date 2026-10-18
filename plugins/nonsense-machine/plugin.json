@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "nonsense-machine",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate unpredictable nonsense and verify its server receipt.",
   "author": {
     "name": "teknologika.com"
@@ -28,7 +28,7 @@
         "composerIcon": "./assets/icon.svg"
       },
       "publication": {
-        "release_notes": "Initial random-result MCP test with in-process receipt verification."
+        "release_notes": "Move workflow instructions into the MCP instructions tool; skill body only calls instructions."
       }
     }
   }
