@@ -22,7 +22,7 @@ if ! sources=$(codex plugin marketplace list); then
   exit 1
 fi
 if printf '%s\n' "$sources" | awk -v name="$marketplace" '$1 == name { found=1 } END { exit !found }'; then
-  printf '%s\n' 'Our ChatGPT plugin marketplace is already registered. Its existing source has been kept.' 'Now visit https://tek.coach/m/CapitalCities to install Capital Cities.'
+  printf '%s\n' 'Our ChatGPT plugin marketplace is already registered. Its existing source has been kept.' 'Now you can install your plugin.'
   exit 0
 fi
 printf '%s\n' 'Add our ChatGPT plugin marketplace?' "Source: $repository (main)" 'This registers a plugin catalog. It does not install any plugins.'
@@ -41,4 +41,4 @@ if ! sources=$(codex plugin marketplace list) || ! printf '%s\n' "$sources" | aw
   printf '%s\n' 'Registration could not be verified. Check the Plugins page before trying again.' >&2
   exit 1
 fi
-printf '%s\n' 'Marketplace added!' 'Now visit https://tek.coach/m/CapitalCities to install Capital Cities.' 'If the marketplace does not appear in the app, restart the app.'
+printf '%s\n' 'Marketplace added!' 'Now you can install your plugin.' 'If the marketplace does not appear, ChatGPT may need to be restarted.'

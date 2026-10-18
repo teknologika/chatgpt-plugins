@@ -19,7 +19,7 @@
         $pattern = '^' + [regex]::Escape($marketplace) + '\s'
         if ($sources | Where-Object { $_ -match $pattern }) {
             Write-Host 'Our ChatGPT plugin marketplace is already registered. Its existing source has been kept.'
-            Write-Host 'Now visit https://tek.coach/m/CapitalCities to install Capital Cities.'
+            Write-Host 'Now you can install your plugin.'
             return
         }
         Write-Host 'Add our ChatGPT plugin marketplace?'
@@ -39,8 +39,8 @@
             throw 'Registration could not be verified. Check the Plugins page before trying again.'
         }
         Write-Host 'Marketplace added!'
-        Write-Host 'Now visit https://tek.coach/m/CapitalCities to install Capital Cities.'
-        Write-Host 'If the marketplace does not appear in the app, restart the app.'
+        Write-Host 'Now you can install your plugin.'
+        Write-Host 'If the marketplace does not appear, ChatGPT may need to be restarted.'
     }
     catch {
         Write-Error -Message $_.Exception.Message -ErrorAction Continue
