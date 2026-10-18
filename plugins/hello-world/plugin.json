@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hello-world",
+  "version": "0.1.0",
+  "description": "A friendly greeting to test plugin installation.",
+  "author": {
+    "name": "teknologika.com"
+  },
+  "license": "LicenseRef-Teknologika-Use-and-Non-Commercialisation-1.0",
+  "keywords": [
+    "greeting",
+    "test"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Hello World",
+        "shortDescription": "Test your plugin installation",
+        "longDescription": "A simple greeting plugin from teknologika.com. Say hello and confirm that the Hello World skill is available. No external connection is required.",
+        "developerName": "teknologika.com",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": "Use Hello World to say hello.",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg"
+      },
+      "publication": {
+        "release_notes": "Initial greeting plugin for marketplace installation testing."
+      }
+    }
+  }
+}

@@ -4,6 +4,10 @@
 
 Practise world capitals with a 20-country quiz, hints, scoring and a review round. No external service connection or API key is required.
 
+## Hello World
+
+A simple greeting plugin to test installation. After registering the marketplace, run `codex plugin add hello-world@teknologika`, start a new chat and ask **Use Hello World to say hello.**
+
 ## Installation
 
 Requires a supported client with the `codex` command available. Once this repository is published on `main`, register the marketplace once:
