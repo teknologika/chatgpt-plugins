@@ -7,7 +7,7 @@
       "args": [
         "--yes",
         "--package",
-        "https://raw.githubusercontent.com/teknologika/chatgpt-plugins/07114db16e5861c570d4d9f9e7c0953d3b72b858/plugins/nonsense-machine/server/teknologika-nonsense-machine-mcp-0.1.1.tgz",
+        "https://raw.githubusercontent.com/teknologika/chatgpt-plugins/main/plugins/nonsense-machine/server/teknologika-nonsense-machine-mcp-0.2.0.tgz",
         "nonsense-machine-mcp"
       ]
     }

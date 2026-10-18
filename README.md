@@ -23,7 +23,7 @@ This tests local MCP execution, not cloud/web availability. Production can repla
 
 ## Nonsense Machine
 
-A local MCP test using unpredictable server-generated results instead of known facts. Install with `codex plugin add nonsense-machine@teknologika` after refreshing the marketplace. Start a fresh chat and ask **Use Nonsense Machine with the word teapot.** The skill must generate and then verify a result through two MCP calls. Receipts are process-local and expire on server restart or eviction. Requires Node.js 20+ and npm/npx.
+A local MCP test using unpredictable server-generated results instead of known facts. Install with `codex plugin add nonsense-machine@teknologika` after refreshing the marketplace. Start a fresh chat and ask **Use Nonsense Machine with the word teapot.** The skill only calls `endpoint` for instructions. The server directs each turn through that one tool, including a remote `roll_dice` network test and receipt verification. Receipts are process-local and expire on server restart or eviction. Requires Node.js 20+ and npm/npx.
 
 ## Installation
 
