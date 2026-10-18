@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "hello-world",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A friendly greeting to test plugin installation.",
   "author": {
     "name": "teknologika.com"
@@ -25,7 +25,7 @@
         "composerIcon": "./assets/icon.svg"
       },
       "publication": {
-        "release_notes": "Initial greeting plugin for marketplace installation testing."
+        "release_notes": "Clarify immediate text-only greeting behaviour without a backend execution step."
       }
     }
   }

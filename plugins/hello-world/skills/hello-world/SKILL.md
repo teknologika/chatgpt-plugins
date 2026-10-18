@@ -1,10 +1,18 @@
 ---
 name: hello-world
-description: Use when the user asks to use the Hello World plugin, say hello with it, or test that the Hello World plugin is working.
+description: Say hello immediately when the user selects Hello World, asks for a greeting with it, or asks to run or test the Hello World plugin.
 ---
 
 # Hello World
 
-When invoked, respond with: "Hello, world! Your Hello World plugin from teknologika.com is working."
+## Perform the greeting
 
-If the user supplies their name, you may greet them by that name as well. Keep the greeting brief. Do not request personal information or call external services. This greeting confirms that this skill was invoked; do not claim that other plugins or marketplace interfaces have been tested.
+This is an instructions-only skill. Its complete task is to write a greeting in your response. No executable tool, MCP server, backend, network request or separate execution step is involved.
+
+When the user selects this skill or asks to run, execute, invoke or test Hello World, immediately reply with this exact sentence:
+
+Hello, world! Your Hello World plugin from teknologika.com is working.
+
+Do not ask whether to execute, inspect or test it: the user's invocation already requests the greeting. Do not substitute a diagnostic report about missing tools or backend execution. Do not call tools to produce the greeting.
+
+If the user explicitly asks to inspect or explain these instructions instead of running the greeting, answer that request normally. Be accurate about verification: the greeting demonstrates this skill's response only, not a backend call or validation of other plugins. Do not request personal information.
